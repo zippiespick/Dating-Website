@@ -5,7 +5,30 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Eduardo Dotel </title>
+        <!-- Latest compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <link href="style.css" rel="stylesheet" >
+                        <!--
+                Name:
+                Age:
+                Location:
+
+                Height:
+                Eye Color:
+                Skin Color:
+                Hair Color:
+                Ocupation:
+                Education:
+                Looking for: female, male, or both
+                About me:
+                Race:
+                Religion:
+                Something interesting to say:
+                What do I want in a partner:-->
     </head>
 
     <body>
@@ -18,7 +41,7 @@
            </a>
        </div>
        <div id="Introduction" class="content"">
-        <a id="Home">
+        <a id="Home"></a>
             <h1>My Profile</h1>
             <br>
             <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
@@ -46,31 +69,23 @@
 
             <div id="AboutMe" class="content">
                 <h2>About Me</h2>
-                <button id="Write">Write!</button>
+                <form>
+                    <textarea id="aboutdescription"name="aboutdescription" cols="40" rows="5"></textarea>
+                    <input type="submit" value="Submit" onClick="showAbout(); return false;">
+                </form>
+                <label>About Me: </label> 
                 <p>
-                    This is about me section
-                <!--
-                Name:
-                Age:
-                Location:
-
-                Height:
-                Eye Color:
-                Skin Color:
-                Hair Color:
-                Ocupation:
-                Education:
-                Looking for: female, male, or both
-                About me:
-                Race:
-                Religion:
-                Something interesting to say:
-                What do I want in a partner:-->
+                    <span id="display"></span>
                 </p>
             </div>
-        </a>
        </div>
     </body>
+    <script>
+        function showAbout() {
+            const aboutdescription = document.getElementById('aboutdescription').value;
+            document.getElementById('display').innerHTML = aboutdescription;
+        }
+    </script>
     <script>
         window.onload = function() {
             var name = "Carlos Hernandez";
