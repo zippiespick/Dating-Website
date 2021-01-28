@@ -12,6 +12,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Latest compiled JavaScript-->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
         <link href="signup.css" rel="stylesheet" >
     </head>
 
@@ -24,35 +25,37 @@
              Profile
             </a>
         </div>
-        <form>
-            <label for="email">Email: </label>
+        <div id="signup" class="container">
+            <form>
+            <label class="signuplabels" for="email">Email: </label>
             <input type="text" id="email" name="email">
             <br>
-            <label for="rtemail">Retype Email: </label>
+            <label class="signuplabels" for="rtemail">Retype Email: </label>
             <input type="text" id="rtemail" name="rtemail">
             <br>
-            <label for="username">Username: </label>
+            <label class="signuplabels" for="username">Username: </label>
             <input type="text" id="username" name="username">
             <br>
-            <label for="password">Password: </label>
+            <label class="signuplabels" for="password">Password: </label>
             <input type="text" id="password" name="password">
             <br>
-            <label for="rtpassword">Retype Password: </label>
+            <label class="signuplabels" for="rtpassword">Retype Password: </label>
             <input type="text" id="rtpassword" name="rtpassword">
             <br>
-            <label for="fname">First Name: </label>
+            <label class="signuplabels" for="fname">First Name: </label>
             <input type="text" id="fname" name="fname">
             <br>
-            <label for="lastname">Last Name: </label>
+            <label class="signuplabels" for="lastname">Last Name: </label>
             <input type="text" id="lname" name="lname">
             <br>
-            <label for="age">Age: </label>
+            <label class="signuplabels" for="age">Age: </label>
             <input type="text" id="age" name="age">
             <br>
-            <label for="location">Location: </label>
+            <label class="signuplabels" for="location">Location: </label>
             <div id="map"></div>
-            <br>
-            
-        </form>
+            <br> 
+            <input type="submit" value="Submit"> 
+            </form>
+        </div> 
     </body>
 </html>
