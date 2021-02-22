@@ -15,5 +15,7 @@
   "bugs": {
     "url": "https://github.com/zippiespick/Dating-Website/issues"
   },
-  "homepage": "https://github.com/zippiespick/Dating-Website#readme"
+  "homepage": "https://github.com/zippiespick/Dating-Website#readme",
+  "dependencies": {},
+  "devDependencies": {}
 }
