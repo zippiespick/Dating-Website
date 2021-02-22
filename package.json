@@ -10,10 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/zippiespick/Dating-Website.git"
   },
-  "dependencies": {
-    "express":"*",
-    "body-parser":"*"
- },
   "author": "",
   "license": "ISC",
   "bugs": {
