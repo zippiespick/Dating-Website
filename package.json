@@ -1,19 +1,35 @@
 {
+<<<<<<< HEAD
   "name": "dating-website",
   "version": "1.0.0",
   "description": "A multipage authentication website that serves to match the user with other people from different locations.\r This project is being built with HTML, CSS, JavaScript, BootStrap, and Express. It is still a work in progress.",
+=======
+  "name": "datingsite",
+  "version": "1.0.0",
+  "description": "",
+>>>>>>> c952613eec1227759056d1fc31521c09a99f9a1d
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
+<<<<<<< HEAD
     "url": "git+https://github.com/zippiespick/Dating-Website.git"
+=======
+    "url": "git+https://github.com/Eddiemeister1/DatingSite.git"
+>>>>>>> c952613eec1227759056d1fc31521c09a99f9a1d
   },
   "author": "",
   "license": "ISC",
   "bugs": {
+<<<<<<< HEAD
     "url": "https://github.com/zippiespick/Dating-Website/issues"
   },
   "homepage": "https://github.com/zippiespick/Dating-Website#readme"
+=======
+    "url": "https://github.com/Eddiemeister1/DatingSite/issues"
+  },
+  "homepage": "https://github.com/Eddiemeister1/DatingSite#readme"
+>>>>>>> c952613eec1227759056d1fc31521c09a99f9a1d
 }

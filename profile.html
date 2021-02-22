@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Eduardo Dotel </title>
+        <!-- Latest compiled and minified CSS-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled JavaScript-->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet" >
+                        <!--
+                Name:
+                Age:
+                Location:
+
+                Height:
+                Eye Color:
+                Skin Color:
+                Hair Color:
+                Ocupation:
+                Education:
+                Looking for: female, male, or both
+                About me:
+                Race:
+                Religion:
+                Something interesting to say:
+                What do I want in a partner:-->
+    </head>
+
+    <body>
+       <div id="menu">
+           <a href="index.html">
+            Home
+           </a>
+           <a href="#Work">
+            Profile
+           </a>
+       </div>
+       <div id="Introduction" class="content"">
+        <a id="Home"></a>
+            <h1>My Profile</h1>
+            <br>
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+            <p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+            <p><img id="output" width="200" /></p>
+            <table>
+                <tr>
+                    <th>Details</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td id="name">name</td>
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td id="age">age</td>
+                </tr>
+                <tr>
+                    <td>Location:</td>
+                    <td id="location">location</td>
+                </tr>
+            </table>
+            <div style="clear:right;"></div>
+
+            <div id="AboutMe" class="content">
+                <h2>About Me</h2>
+                <form>
+                    <textarea id="aboutdescription"name="aboutdescription" cols="40" rows="5"></textarea>
+                    <input type="submit" value="Submit" onClick="showAbout(); return false;">
+                </form>
+                <label>About Me: </label> 
+                <p>
+                    <span id="display"></span>
+                </p>
+            </div>
+       </div>
+    </body>
+    <script>
+        function showAbout() {
+            const aboutdescription = document.getElementById('aboutdescription').value;
+            document.getElementById('display').innerHTML = aboutdescription;
+        }
+    </script>
+    <script>
+        window.onload = function() {
+            var name = "Carlos Hernandez";
+            var age = 22;
+            var location = "Hialeah";
+            
+
+            document.getElementById('name').innerHTML = name;
+            document.getElementById('age').innerHTML = age;
+            document.getElementById('location').innerHTML = location;
+        }
+
+        //Function to upload profile pics
+        var loadFile = function(event) {
+	    var image = document.getElementById('output');
+	    image.src = URL.createObjectURL(event.target.files[0]);
+    };
+    </script>
+</html>
