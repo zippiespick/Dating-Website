@@ -3,10 +3,6 @@
   "version": "1.0.0",
   "description": "A multipage authentication website that serves to match the user with other people from different locations.\r This project is being built with HTML, CSS, JavaScript, BootStrap, and Express. It is still a work in progress.",
   "main": "app.js",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zippiespick/Dating-Website/issues"
   },
-  "homepage": "https://github.com/zippiespick/Dating-Website#readme"
+  "homepage": "https://github.com/zippiespick/Dating-Website#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
